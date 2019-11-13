@@ -14,7 +14,7 @@ Rebranded as ScoreKEEPER, projectScore is an application that keeps digital trac
 
 It's so easy:
 
-1. Visit https://guarded-crag-56699.herokuapp.com/
+1. Visit https://aqueous-refuge-97923.herokuapp.com/
 2. Click the "add game" icon or select an existing game from our database
 3. If you chose to add a game ruleset, fill out the form accordingly and either
 
