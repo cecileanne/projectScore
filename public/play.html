@@ -109,31 +109,5 @@
 
     <!-- Custom Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- Script for counters on cards  -->
-    <script>
-      $(".scoreAdjust").on("click", function() {
-        var $button = $(this);
-        var oldValue = $button
-          .parent()
-          .find("input")
-          .val();
-
-        if ($button.text() == "+") {
-          var newVal = parseFloat(oldValue) + 1;
-        } else {
-          // Don't allow decrementing below zero
-          if (oldValue > 0) {
-            var newVal = parseFloat(oldValue) - 1;
-          } else {
-            newVal = 0;
-          }
-        }
-
-        $button
-          .parent()
-          .find("input")
-          .val(newVal);
-      });
-    </script>
   </body>
 </html>
