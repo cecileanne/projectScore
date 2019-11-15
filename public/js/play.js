@@ -68,6 +68,22 @@ $(document).ready(() => {
           "indigo lighten-3",
           "pink lighten-3"
         ];
+        const buttonPlusBG = [
+          "green darken-4",
+          "yellow darken-4",
+          "blue darken-4",
+          "orange darken-4",
+          "indigo darken-4",
+          "pink darken-4"
+        ];
+        const buttonMinusBG = [
+          "green darken-2",
+          "yellow darken-2",
+          "blue darken-2",
+          "orange darken-2",
+          "indigo darken-2",
+          "pink darken-2"
+        ];
 
         const card = $(`<div class="col s12 l6">
                 <div class="playerCard">
@@ -98,10 +114,16 @@ $(document).ready(() => {
                           <p>
                             <form>
                                 <div class="row">
+                                <a class="col scoreAdjust btn-floating btn-large waves-effect waves-light blue ${
+                                  buttonPlusBG[i]
+                                }"><i class="small material-icons" font-size="40px">-</i></a>
                                 <input class="col s1 btn-floating btn-large ${
                                   cardText[i]
                                 }" type="number" min="0" name="player${i +
           1}" id="player${i + 1}" value="0">
+                                <a class="col scoreAdjust btn-floating btn-large waves-effect waves-light ${
+                                  buttonMinusBG[i]
+                                }"><i class="small material-icons" font-size="40px">+</i></a>    
                                 </div>
                             </form>        
                           </p>
